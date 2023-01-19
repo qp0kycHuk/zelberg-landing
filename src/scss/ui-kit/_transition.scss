@@ -27,10 +27,16 @@
 }
 
 // Задержка
-@media(min-width: $lg) {
+.delay {
   @for $i from 1 through 10 {
-    .delay-#{$i} {
+    &-#{$i} {
       transition-delay: #{calc($i / 10) + s};
+    }
+  }
+
+  @media(max-width: $lg) {
+    &-lg-none {
+      transition-delay: 0s;
     }
   }
 }
