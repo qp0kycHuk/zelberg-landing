@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="autor" content="Студия КИТ"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+
+  <title><%= data.title %></title>
+</head>
+<body>
+
+  <!-- Шапка документа -->
+
+  <header class="header container container--mx flex align-center justify-between sticky zi-3 py-3 py-sm-2 py-4 linear duration-3 -header-">
+    <a class="btn gap-4 font-alt text-28 bold-6" href="/">
+      <picture>
+        <source srcset="img/pictures/logo.webp" type="image/webp">
+        <img class="icon text-42" src="img/pictures/logo.png" alt="">
+      </picture>
+      Fitout
+    </a>
+    <nav class="nav flex align-center justify-between d-lg-none gap-6 w-100">
+      <a class="btn btn btn--primary text-14 color-black bold-5 brs-1 p-1" href="#service" data-href>Об услуге</a>
+      <a class="btn btn btn--primary text-14 color-black bold-5 brs-1 p-1" href="#approach" data-href>Подход</a>
+      <a class="btn btn btn--primary text-14 color-black bold-5 brs-1 p-1" href="#materials" data-href>Материалы</a>
+      <a class="btn btn btn--primary text-14 color-black bold-5 brs-1 p-1" href="#accessories" data-href>Комплектующие</a>
+      <a class="btn btn btn--primary text-14 color-black bold-5 brs-1 p-1" href="#coatings" data-href>Финишные покрытия</a>
+      <a class="btn btn btn--primary text-14 color-black bold-5 brs-1 p-1" href="#contacts" data-href>Контакты</a>
+    </nav>
+    <a class="btn btn--second d-sm-none p-1" href="tel:">
+      <svg class="icon text-20 color-second mr-2">
+        <use xlink:href="img/icons.svg#tel" />
+      </svg>
+      <div class="flex flex-column">
+        <span class="text-16 bold-7 color-black">8 (499) 130-55-12</span>
+        <span class="text text--underline text-12 bold-4 color-second">Заказать звонок</span>
+      </div>
+    </a>
+    <button class="burger btn btn--second text-36 d-none d-lg-flex brs-1 p-1 -burger-">
+      <svg class="icon">
+        <use xlink:href="img/icons.svg#burger" />
+      </svg>
+    </button>
+  </header>
+
+  <!-- Мобильное меню -->
+
+  <section class="mobile fixed zi-6 w-100 h-100 ease duration-1 -mobile-" data-theme="light">
+    <div class="mobile__content flex flex-column overflow-auto w-100 h-100 ease duration-3" data-mobile>
+      <div class="mobile__head flex align-center justify-between gap-2 relative bg-black py-3 px-4 ease duration-5 delay-3">
+        <a class="btn gap-4 font-alt text-28 color-white bold-6" href="/">
+          <picture>
+            <source srcset="img/pictures/logo.webp" type="image/webp">
+            <img class="icon text-42" src="img/pictures/logo.png" alt="">
+          </picture>
+          Fitout
+        </a>
+        <div class="dark-btn d-none d-sm-block">
+          <input class="switch switch--toggle -switch-theme-" type="checkbox">
+        </div>
+        <button class="btn text-24 -close-">
+          <svg class="icon color-white">
+            <use xlink:href="img/icons.svg#close" />
+          </svg>
+        </button>
+      </div>
+      <div class="mobile__nav flex flex-column relative w-max gap-5 p-4 ease duration-9 delay-5">
+        <a class="link text-18 color-white w-max -mobile-link-" href="#service" data-href>Об услуге</a>
+        <a class="link text-18 color-white w-max -mobile-link-" href="#approach" data-href>Подход</a>
+        <a class="link text-18 color-white w-max -mobile-link-" href="#materials" data-href>Материалы</a>
+        <a class="link text-18 color-white w-max -mobile-link-" href="#accessories" data-href>Комплектующие</a>
+        <a class="link text-18 color-white w-max -mobile-link-" href="#coatings" data-href>Финишные покрытия</a>
+        <a class="link text-18 color-white w-max -mobile-link-" href="#contacts" data-href>Контакты</a>
+      </div>
+      <div class="mobile__footer relative color-white mt-auto px-4 pb-8 ease duration-5 delay-9">
+        <div class="flex flex-column gap-5">
+          <a class="flex align-center link-wrapper" href="tel:">
+            <svg class="icon color-second text-26 mr-4">
+              <use xlink:href="img/icons.svg#phone" />
+            </svg>
+            <div class="flex flex-column">
+              <span class="font-alt text-18 bold-5">Звоните</span>
+              <span class="link text-14 bold-4">8(918) 00-00-000</span>
+            </div>
+          </a>
+          <div class="flex align-center">
+            <svg class="icon color-second text-26 mr-4">
+              <use xlink:href="img/icons.svg#geo" />
+            </svg>
+            <div class="flex flex-column">
+              <span class="font-alt text-18 bold-5">Приходите</span>
+              <address class="text-14 bold-4">г. Москва, ул. Краснобогатырская <br> дом 6 строение 2</address>
+            </div>
+          </div>
+          <a class="flex align-center link-wrapper" href="mailto:">
+            <svg class="icon color-second text-26 mr-4">
+              <use xlink:href="img/icons.svg#mail" />
+            </svg>
+            <div class="flex flex-column">
+              <span class="font-alt text-18 bold-5">Пишите</span>
+              <span class="link text-14 bold-4">info@fitout.ru</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Переключатель темы -->
+
+  <div class="theme flex flex-column align-center justify-center d-sm-none fixed zi-5 bd-all color-white bg-black brs-4 p-3">
+    <input class="theme__switch switch switch--toggle mb-2 -switch-theme-" type="checkbox">
+    <div class="theme__text font-alt text-12 bold-4">
+      <span>Темная</span><span>Светлая</span> тема
+    </div>
+  </div>

@@ -1,0 +1,54 @@
+// Переключатели
+.switch {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  position       : relative;
+  user-select    : none;
+  color          : var(--color-primary);
+  border         : 1px solid var(--color-grey);
+  transition     : 0.2s linear;
+  cursor         : pointer;
+
+  &--toggle {
+    min-width    : 80px;
+    width        : 80px;
+    height       : 36px;
+    border-radius: 20px;
+
+    &::after {
+      content      : "";
+      position     : absolute;
+      top          : 0;
+      bottom       : 0;
+      margin-block : auto;
+      height       : 24px;
+      border-radius: 20px;
+    }
+
+    &:not(:checked)::after {
+      left            : 4px;
+      right           : 50px;
+      background-color: var(--color-grey);
+      transition      : left 0.5s ease, right 0.4s ease 0.2s;
+    }
+
+    &:checked::after {
+      left            : 50px;
+      right           : 4px;
+      background-color: currentColor;
+      transition      : left 0.4s ease 0.2s, right 0.5s ease, background-color 0.35s ease -0.1s;
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity       : 0.5;
+  }
+
+  @media(hover) {
+    &:hover {
+      box-shadow: 0 0 0 4px var(--color-primary-40);
+    }
+  }
+}

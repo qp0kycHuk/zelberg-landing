@@ -1,0 +1,26 @@
+// Рамка
+.bd {
+  &-all {
+    border: 1px solid var(--color-black-10);
+  }
+
+  &-top {
+    border-top: 1px solid var(--color-black-10);
+  }
+
+  &-left {
+    border-left: 1px solid var(--color-black-10);
+  }
+
+  &-right {
+    border-right: 1px solid var(--color-black-10);
+  }
+
+  &-bottom {
+    border-bottom: 1px solid var(--color-black-10);
+  }
+
+  &-none {
+    border: none;
+  }
+}

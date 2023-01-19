@@ -1,0 +1,117 @@
+// Шапка документа
+.header {
+  background-color: var(--color-grey-50);
+  backdrop-filter : blur(8px);
+  top             : 0;
+  left            : 0;
+  right           : 0;
+  transform       : translateY(var(--top));
+
+  @media(min-width: $md) {
+    & {
+      border-radius: 0 0 24px 24px;
+    }
+  }
+}
+
+// Навигация
+.nav {
+  max-width: 700px;
+}
+
+// Мобильное меню
+.mobile {
+  inset: 0;
+
+  &__content {
+    max-width       : 375px;
+    background-color: var(--color-black-90);
+    backdrop-filter : blur(4px);
+    box-shadow      : 0 0 0 100vw var(--color-black-50);
+  }
+
+  &:not(&--show) {
+    opacity   : 0;
+    visibility: hidden;
+  }
+
+  &:not(&--show) &__content {
+    transform : translateX(-100%);
+    opacity   : 0;
+    visibility: hidden;
+  }
+
+  &:not(&--show) &__head {
+    transform: translateY(-80px);
+  }
+
+  &:not(&--show) &__nav {
+    transform: translateX(-220px);
+    opacity  : 0;
+  }
+
+  &:not(&--show) &__footer {
+    transform: translateY(-50px);
+    opacity  : 0;
+  }
+
+  &__accordion:is([data-accordion="active"]) &__arrow {
+    transform: rotate(90deg);
+  }
+
+  &--show {
+    opacity   : 1;
+    visibility: visible;
+  }
+
+  &--show &__content {
+    transform : translateX(0);
+    opacity   : 1;
+    visibility: visible;
+  }
+
+  &--show &__head {
+    transform: translateY(0);
+  }
+
+  &--show &__nav {
+    transform: translateX(0);
+    opacity  : 1;
+  }
+
+  &--show &__footer {
+    transform: translateY(0);
+    opacity  : 1;
+  }
+}
+
+// Переключатель темы
+.theme {
+  width : 110px;
+  bottom: 70px;
+  right : 24px;
+
+  &__switch:checked+&__text span:first-child {
+    display: none;
+  }
+
+  &__switch:not(:checked)+&__text span:last-child {
+    display: none;
+  }
+}
+
+// Прозрачный фон
+.glass-bg {
+  background-image: linear-gradient(94.78deg, var(--color-primary) 0%, var(--color-none) 58.26%);
+}
+
+// Подвал
+.footer {
+  @media(max-width: $sm) {
+    & {
+      flex-direction : column;
+      justify-content: center;
+      text-align     : center;
+    }
+  }
+}

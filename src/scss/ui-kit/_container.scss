@@ -1,0 +1,37 @@
+// Контейнер
+.container {
+  --padding: 40px;
+  --width  : 100vw - 30px;
+  padding  : var(--padding) calc(50% - ((var(--width)) / 2));
+
+  @media(min-width: $sm) {
+    & {
+      --padding: 50px;
+      --width  : var(--block-sm);
+    }
+  }
+
+  @media(min-width: $md) {
+    & {
+      --padding: 60px;
+      --width  : var(--block-md);
+
+      &--mx {
+        --width      : calc(var(--block-md) + 40px);
+        margin-inline: 20px;
+        border-radius: 24px;
+      }
+    }
+  }
+
+  @media(min-width: $lg) {
+    & {
+      --padding: 70px;
+      --width  : var(--block-lg);
+
+      &--mx {
+        --width: calc(var(--block-lg) + 40px);
+      }
+    }
+  }
+}

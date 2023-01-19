@@ -1,0 +1,7 @@
+// Список
+.listing {
+  display        : flex;
+  flex-direction : column;
+  list-style-type: disc;
+  padding-left   : 16px;
+}

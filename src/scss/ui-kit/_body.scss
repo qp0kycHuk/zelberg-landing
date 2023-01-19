@@ -1,0 +1,23 @@
+// Тело документа
+body {
+  color           : var(--color-black);
+  background-color: var(--color-grey);
+
+  &:is([data-theme="dark"]) {
+    --color-black: #fff;
+    --color-white: #000;
+    --color-grey : #303030;
+
+    & :is([data-theme="light"], .btn) {
+      --color-black: #000;
+      --color-white: #fff;
+      --color-grey : #F3F3F3;
+    }
+  }
+}
+
+// Выделение
+::selection {
+  color           : var(--color-white);
+  background-color: var(--color-primary);
+}

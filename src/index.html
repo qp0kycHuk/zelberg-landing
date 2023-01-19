@@ -1,814 +1,458 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-	<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
-	<link rel="manifest" href="icon/site.webmanifest">
-	<link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href="icon/favicon.ico">
-	<meta name="msapplication-TileColor" content="#303030">
-	<meta name="msapplication-TileImage" content="icon/mstile-144x144.png">
-	<meta name="msapplication-config" content="icon/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
-
-	<!-- <script src="source/swiper-bundle.min.js"></script> -->
-
-	<!-- <link rel="stylesheet" href="source/_libs.css"> -->
-
-	<!-- <link rel="stylesheet" href="css/frontend--fonts.css"> -->
-	<!-- <link rel="stylesheet" href="css/frontend--style.css"> -->
-
-
-
-
-
-
-
-	<title>Zelberg</title>
-</head>
-
-<body>
-	<div id="top"></div>
-
-
-
-
-	<div class="mobile-menu" id="mobile-menu">
-		<div class="mobile-menu__header">
-			<div class="mobile-menu__title">Меню</div>
-		</div>
-		<div class="mobile-menu__nav">
-			<a data-toggle-link="mobile-menu" href="about.html" class="mobile-menu__item">О нас</a>
-			<a data-toggle-link="mobile-menu" href="partitions.html" class="mobile-menu__item">Перегородки</a>
-			<a data-toggle-link="mobile-menu" href="floors.html" class="mobile-menu__item">Фальшполы</a>
-			<a data-toggle-link="mobile-menu" href="ceilings.html" class="mobile-menu__item">Подвесные потолки</a>
-			<a data-toggle-link="mobile-menu" href="portfolio.html" class="mobile-menu__item">Портфолио</a>
-			<a data-toggle-link="mobile-menu" href="contact.html" class="mobile-menu__item">Контакты</a>
-		</div>
-		<div class="mobile-menu__contact">
-			<a href="tel:+79180399004" class="mobile-menu-link">
-				<svg class="icon">
-					<use xlink:href="img/sprite.svg#phone" />
-				</svg>
-				8 918 039 90 04
-			</a>
-			<a href="tel:+79180399004" class="mobile-menu-link">
-				<svg class="icon">
-					<use xlink:href="img/sprite.svg#address" />
-				</svg>
-				Краснодар, Ул. Никитина 26
-			</a>
-			<a href="mailto:nikexpo@info.ru" class="mobile-menu-link">
-				<svg class="icon">
-					<use xlink:href="img/sprite.svg#envelope" />
-				</svg>
-				nikexpo@info.ru
-			</a>
-		</div>
-	</div>
-
-
-
-
-
-	<header class="header">
-		<button class="header-burger" data-toggle-link="mobile-menu">
-			<svg class="icon">
-				<use xlink:href="img/sprite.svg#menu" />
-			</svg>
-		</button>
-		<a href="/" class="header__logo">
-			<img src="img/icons/logo.png" alt="">
-		</a>
-		<nav class="header-nav">
-
-			<a class="header-nav__item">Об услуге</a>
-			<a class="header-nav__item">Подход</a>
-			<a class="header-nav__item">Материалы</a>
-			<a class="header-nav__item">Комплектующие</a>
-			<a class="header-nav__item">Материалы</a>
-			<a class="header-nav__item">Контакты</a>
-		</nav>
-
-		<div class="header-phone">
-			<a href="tel:+74991305512" class="header-phone__link">8 (499) 130-55-12</a>
-			<button class="header-phone__callback" data-fancybox-modal data-src="modal-callback.html">Заказать
-				звонок</button>
-		</div>
-	</header>
-
-
-
-
-
-
-
-	<section class="started">
-		<div class="started__content">
-			<h1 class="started__title">
-				ФАЛЬШПОЛЫ <br>
-				ОТ ПРОИЗВОДИТЕЛЯ</h1>
-			<h2 class="started__subtitle">Прозрачные цены. Полный комплекс услуг</h2>
-			<p class="started__desc">
-				Устройство системы промышленного фальшпола для <br>
-				электрощитовых и производственных помещений - <br>
-				панели K38Vent композитные решетки. Объём 910 <br>
-				м.кв. Высота 1520 мм
-			</p>
-		</div>
-		<div class="started-img">
-
-		</div>
-	</section>
-
-	<section class="floors-page">
-		<div class="info">
-			<div class="info-left">
-				<div class="info-left__img">
-					<img src="https://zelberggroup.ru/upload/iblock/f64/f64897519248aa508790536553628af0.jpg" alt="">
-				</div>
-			</div>
-			<div class="info-right">
-				<div class="info__title">Монтаж системы фальшпола </div>
-				<div class="info__cost">от 500 ₽ / м2</div>
-				<ul class="info__list">
-					<li>Бизнес-центры и банки</li>
-					<li>Офисные помещения Open Space</li>
-					<li>Технические помещения</li>
-					<li>Операторные и серверные комнаты</li>
-					<li>Аудитории и лаборатории</li>
-					<li>Торговый ритейл и рестораны</li>
-				</ul>
-				<div class="info-btns">
-					<button class="info__btn btn btn--accent waves-effect" data-fancybox-modal=""
-						data-src="/local/ajax/modal-callback.php?get_form_name=Монтаж%20системы%20фальшпола">
-						Вызвать специалиста
-					</button>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<!-- ПРОЗРАЧНАЯ СИСТЕМА ЦЕН -->
-	<section class="cost">
-		<h2 class="cost__title title">ПРОЗРАЧНАЯ СИСТЕМА ЦЕН</h2>
-		<h3 class="cost__subtitle subtitle">Узнайте, из чего складывается цена системы</h3>
-		<div class="cost-block">
-			<div class="cost-plate">
-				<svg class="icon">
-					<use xlink:href="img/sprite.svg#grid-alt" />
-				</svg>
-				<div class="cost-plate__title">
-					Цена системы фальшпола
-					«под ключ» на 100 м2
-				</div>
-				<div class="cost-plate__value">
-					250 000 ₽
-				</div>
-			</div>
-			<div class="cost__img">
-				<picture>
-					<!-- <source media="(min-width: )" srcset=""> -->
-					<img src="img/sempl/cost-img.png" alt="">
-				</picture>
-
-				<div class="cost-sempl cost-sempl-1">
-					<img src="img/sempl/cost-sempl-1.png" alt="">
-				</div>
-				<div class="cost-sempl cost-sempl-2">
-					<img src="img/sempl/cost-sempl-2.png" alt="">
-				</div>
-				<div class="cost-sempl cost-sempl-3">
-					<img src="img/sempl/cost-sempl-2.png" alt="">
-				</div>
-			</div>
-			<div class="cost-content">
-				<div class="cost-content__title">
-					Цена системы
-					складывается из:
-				</div>
-				<div class="cost-list">
-					<div class="cost-list__item">
-						<svg class="icon">
-							<use xlink:href="img/sprite.svg#layers" />
-						</svg>
-						<div class="cost-list__title">Панель <span>от 100 ₽ / шт </span></div>
-					</div>
-					<div class="cost-list__item">
-						<svg class="icon">
-							<use xlink:href="img/sprite.svg#stand" />
-						</svg>
-						<div class="cost-list__title">Стойка <span>от 100 ₽ / шт </span></div>
-					</div>
-					<div class="cost-list__item">
-						<svg class="icon">
-							<use xlink:href="img/sprite.svg#settings" />
-						</svg>
-						<div class="cost-list__title">Комлектующие <span>от 100 ₽ / м2</span></div>
-					</div>
-					<div class="cost-list__item">
-						<svg class="icon">
-							<use xlink:href="img/sprite.svg#square" />
-						</svg>
-						<div class="cost-list__title">Работы <span>от 300 ₽ / м2</span></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- НАШ ПРОФЕССИОНАЛЬНЫЙ ПОДХОД -->
-	<div class="rounded-section">
-		<section class="profi">
-			<h2 class="profi__title title">НАШ ПРОФЕССИОНАЛЬНЫЙ ПОДХОД</h2>
-			<h3 class="profi__subtitle subtitle">Узнайте, сколько стоит нужная вам услуга</h3>
-			<div class="profi-list">
-				<div class="profi-item">
-					<div class="profi-item__title">
-						<svg class="icon">
-							<use xlink:href="/local/templates/zelberg/img/sprite.svg#protractor"></use>
-						</svg>
-						Этап 1
-
-					</div>
-					<ul class="profi-item__list">
-						<li>Бесплатный выезд на объект</li>
-						<li>Замеры объекта</li>
-						<li>Обследование объекта</li>
-					</ul>
-				</div>
-				<div class="profi-item">
-					<div class="profi-item__title">
-						<svg class="icon">
-							<use xlink:href="/local/templates/zelberg/img/sprite.svg#document-signed"></use>
-						</svg>
-						Этап 2
-
-					</div>
-					<ul class="profi-item__list">
-						<li>Составление проекта</li>
-						<li>Раскладка панелей</li>
-						<li>Расчет необходимого
-							комплекта материалов</li>
-						<li>Подписание договора</li>
-					</ul>
-				</div>
-				<div class="profi-item">
-					<div class="profi-item__title">
-						<svg class="icon">
-							<use xlink:href="/local/templates/zelberg/img/sprite.svg#square"></use>
-						</svg>
-						Этап 3
-
-					</div>
-					<ul class="profi-item__list">
-						<li>Выполнение
-							подготовительных работ</li>
-						<li>Запуск материалов
-							в производство</li>
-					</ul>
-				</div>
-				<div class="profi-item">
-					<div class="profi-item__title">
-						<svg class="icon">
-							<use xlink:href="/local/templates/zelberg/img/sprite.svg#tools"></use>
-						</svg>
-						Этап 4
-
-					</div>
-					<ul class="profi-item__list">
-						<li>Доставка материала
-							в оговоренные сроки</li>
-						<li>Монтаж</li>
-						<li>Предоставление гарантии</li>
-						<li>Сервисное обслуживание</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-	</div>
-
-	<!-- МАТЕРИАЛЫ ДЛЯ ПАНЕЛЕЙ -->
-	<div class="rounded-section">
-		<section class="material">
-			<h2 class="material__title title">МАТЕРИАЛЫ ДЛЯ ПАНЕЛЕЙ</h2>
-			<h3 class="material__subtitle subtitle">Узнайте, сколько стоит нужная вам услуга</h3>
-			<div class="material-list">
-				<div class="material-item">
-					<div class="material-item__img bg-loader">
-						<img src="img/sempl/material-1.png" alt="">
-					</div>
-					<div class="material-item__content">
-						<div class="material-item__title">
-							Панель из высокоплотного
-							ДСП <b> Zelberg Wood</b>
-						</div>
-						<div class="material-item__cost">от 1400 ₽/м<sup>2</sup></div>
-						<div class="material-item__desc">
-							Основа несущей плиты представляет
-							собой специальный спрессованный
-							древесно-стружечный материал
-							высокой плотности (650 - 720 кг/м3)
-							с добавлением гиброфобизаторов
-						</div>
-					</div>
-				</div>
-				<div class="material-item">
-					<div class="material-item__img bg-loader">
-						<img src="img/sempl/material-1.png" alt="">
-					</div>
-					<div class="material-item__content">
-						<div class="material-item__title">
-							Панель из высокоплотного
-							ДСП <b> Zelberg Wood</b>
-						</div>
-						<div class="material-item__cost">от 1400 ₽/м<sup>2</sup></div>
-						<div class="material-item__desc">
-							Основа несущей плиты представляет
-							собой специальный спрессованный
-							древесно-стружечный материал
-							высокой плотности (650 - 720 кг/м3)
-							с добавлением гиброфобизаторов
-						</div>
-					</div>
-				</div>
-				<div class="material-item">
-					<div class="material-item__img bg-loader">
-						<img src="img/sempl/material-1.png" alt="">
-					</div>
-					<div class="material-item__content">
-						<div class="material-item__title">
-							Панель из высокоплотного
-							ДСП <b> Zelberg Wood</b>
-						</div>
-						<div class="material-item__cost">от 1400 ₽/м<sup>2</sup></div>
-						<div class="material-item__desc">
-							Основа несущей плиты представляет
-							собой специальный спрессованный
-							древесно-стружечный материал
-							высокой плотности (650 - 720 кг/м3)
-							с добавлением гиброфобизаторов
-						</div>
-					</div>
-				</div>
-				<div class="material-item">
-					<div class="material-item__img bg-loader">
-						<img src="img/sempl/material-1.png" alt="">
-					</div>
-					<div class="material-item__content">
-						<div class="material-item__title">
-							Панель из высокоплотного
-							ДСП <b> Zelberg Wood</b>
-						</div>
-						<div class="material-item__cost">от 1400 ₽/м<sup>2</sup></div>
-						<div class="material-item__desc">
-							Основа несущей плиты представляет
-							собой специальный спрессованный
-							древесно-стружечный материал
-							высокой плотности (650 - 720 кг/м3)
-							с добавлением гиброфобизаторов
-						</div>
-					</div>
-				</div>
-				<div class="material-item">
-					<div class="material-item__img bg-loader">
-						<img src="img/sempl/material-1.png" alt="">
-					</div>
-					<div class="material-item__content">
-						<div class="material-item__title">
-							Панель из высокоплотного
-							ДСП <b> Zelberg Wood</b>
-						</div>
-						<div class="material-item__cost">от 1400 ₽/м<sup>2</sup></div>
-						<div class="material-item__desc">
-							Основа несущей плиты представляет
-							собой специальный спрессованный
-							древесно-стружечный материал
-							высокой плотности (650 - 720 кг/м3)
-							с добавлением гиброфобизаторов
-						</div>
-					</div>
-				</div>
-				<div class="material-item">
-					<div class="material-item__img bg-loader">
-						<img src="img/sempl/material-1.png" alt="">
-					</div>
-					<div class="material-item__content">
-						<div class="material-item__title">
-							Панель из высокоплотного
-							ДСП <b> Zelberg Wood</b>
-						</div>
-						<div class="material-item__cost">от 1400 ₽/м<sup>2</sup></div>
-						<div class="material-item__desc">
-							Основа несущей плиты представляет
-							собой специальный спрессованный
-							древесно-стружечный материал
-							высокой плотности (650 - 720 кг/м3)
-							с добавлением гиброфобизаторов
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<button data-fancybox-modal data-src="modal-calc.html" class="material__btn btn btn--accent">Рассчитать
-				стоимость</button>
-		</section>
-	</div>
-
-	<!-- КОМПЛЕКТУЮЩИЕ -->
-	<section class="parts">
-		<h2 class="parts__title title">КОМПЛЕКТУЮЩИЕ</h2>
-		<h3 class="parts__subtitle subtitle">Для каждого заказа мы готовы подобрать индивидуальный набор комплектующих
-		</h3>
-		<div class="parts-list">
-
-			<div class="parts-item">
-				<div class="parts-item__img bg-loader">
-					<img src="https://zelberggroup.ru/upload/iblock/790/7903647059779e5fbe056759598a52b6.png" alt="">
-				</div>
-				<div class="parts-item__content">
-					<div class="parts-item__title">Стойки</div>
-					<div class="parts-item__desc">Изготовлены из гальванизированной стали с диаметрами трубок от М12 до
-						М30. Регулируемый диапазон высот от 18мм до 2-х метров.</div>
-					<a href="/floors/?ELEMENT_ID=11" class="parts-item__link btn btn--link waves-effect">
-						Смотреть подробнее
-						<svg class="icon">
-							<use xlink:href="/local/templates/zelberg/img/sprite.svg#arrow"></use>
-						</svg>
-					</a>
-				</div>
-			</div>
-			<div class="parts-item">
-				<div class="parts-item__img bg-loader">
-					<img src="https://zelberggroup.ru/upload/iblock/415/415af28145c7a64f4d8d5f29a0aff488.png" alt="">
-				</div>
-				<div class="parts-item__content">
-					<div class="parts-item__title">Стрингеры</div>
-					<div class="parts-item__desc">Имеют вид П- или замкнутого прямоугольного профиля. Придают системе
-						дополнительную горизонтальную прочность. Их установка обязательна при высоте от 500мм.</div>
-					<a href="/floors/?ELEMENT_ID=12" class="parts-item__link btn btn--link waves-effect">
-						Смотреть подробнее
-						<svg class="icon">
-							<use xlink:href="/local/templates/zelberg/img/sprite.svg#arrow"></use>
-						</svg>
-					</a>
-				</div>
-			</div>
-			<div class="parts-item">
-				<div class="parts-item__img bg-loader">
-					<img src="https://zelberggroup.ru/upload/iblock/add/addf0fdfeb74efb89da2873ca32f2d8b.png" alt="">
-				</div>
-				<div class="parts-item__content">
-					<div class="parts-item__title">С-Профиль</div>
-					<div class="parts-item__desc">Усиливающий стингер для улучшения несущей способности фальшпола и
-						придания ему горизонтальной стабильности.</div>
-					<a href="/floors/?ELEMENT_ID=13" class="parts-item__link btn btn--link waves-effect">
-						Смотреть подробнее
-						<svg class="icon">
-							<use xlink:href="/local/templates/zelberg/img/sprite.svg#arrow"></use>
-						</svg>
-					</a>
-				</div>
-			</div>
-			<div class="parts-item">
-				<div class="parts-item__img bg-loader">
-					<img src="https://zelberggroup.ru/upload/iblock/b3b/b3b3169b7c7ac940aac4876eef8fd725.png" alt="">
-				</div>
-				<div class="parts-item__content">
-					<div class="parts-item__title">Аксессуары</div>
-					<div class="parts-item__desc">К вашему вниманию предлагается широкий выбор аксессуаров для
-						обслуживания фальшпола, а также специальные съемники для доступа к коммуникациям.</div>
-					<a href="/floors/?ELEMENT_ID=14" class="parts-item__link btn btn--link waves-effect">
-						Смотреть подробнее
-						<svg class="icon">
-							<use xlink:href="/local/templates/zelberg/img/sprite.svg#arrow"></use>
-						</svg>
-					</a>
-				</div>
-			</div>
-		</div>
-
-
-		<h2 class="parts__title title">ФИНИШНЫЕ ПОКРЫТИЯ</h2>
-		<h3 class="parts__subtitle subtitle">Вы можете ознакомиться с полным списком фальшпола с покрытием</h3>
-		<div class="parts-list">
-
-			<div class="parts-item">
-				<div class="parts-item__img bg-loader">
-					<img src="https://zelberggroup.ru/upload/iblock/5c2/5c2dac7d84b1b412abe8a36078ffa675.png" alt="">
-				</div>
-				<div class="parts-item__content">
-					<div class="parts-item__title">Ковровые покрытия</div>
-					<div class="parts-item__desc">Одно из лучших решений в оформлении пола. Выпускается размером 50*50
-						см. Высота ворса от 4 до 20 мм. Не боится влаги и высоких температур. </div>
-					<a href="/floors/?ELEMENT_ID=7" class="parts-item__link btn btn--link waves-effect">
-						Смотреть подробнее
-						<svg class="icon">
-							<use xlink:href="/local/templates/zelberg/img/sprite.svg#arrow"></use>
-						</svg>
-					</a>
-				</div>
-			</div>
-			<div class="parts-item">
-				<div class="parts-item__img bg-loader">
-					<img src="https://zelberggroup.ru/upload/iblock/dbc/dbca57a0e8235b6e548cc5839f9f19dc.png" alt="">
-				</div>
-				<div class="parts-item__content">
-					<div class="parts-item__title">ПВХ покрытия и натуральный линолеум</div>
-					<div class="parts-item__desc">Плитка ПВХ обладает антистатическим эффектом. Легко укладывается, не
-						склонно к скольжению, устойчива к механическим повреждениям.</div>
-					<a href="/floors/?ELEMENT_ID=8" class="parts-item__link btn btn--link waves-effect">
-						Смотреть подробнее
-						<svg class="icon">
-							<use xlink:href="/local/templates/zelberg/img/sprite.svg#arrow"></use>
-						</svg>
-					</a>
-				</div>
-			</div>
-			<div class="parts-item">
-				<div class="parts-item__img bg-loader">
-					<img src="https://zelberggroup.ru/upload/iblock/d18/d18abcf9284f567174a86e20c0511de1.png" alt="">
-				</div>
-				<div class="parts-item__content">
-					<div class="parts-item__title">Ламинат</div>
-					<div class="parts-item__desc">Самое практичное и экономичное решение для офисов и коммерческих
-						помещений. Широкая гамма расцветок и рисунков. </div>
-					<a href="/floors/?ELEMENT_ID=9" class="parts-item__link btn btn--link waves-effect">
-						Смотреть подробнее
-						<svg class="icon">
-							<use xlink:href="/local/templates/zelberg/img/sprite.svg#arrow"></use>
-						</svg>
-					</a>
-				</div>
-			</div>
-			<div class="parts-item">
-				<div class="parts-item__img bg-loader">
-					<img src="https://zelberggroup.ru/upload/iblock/f91/f9187fbacdb556284d8c82b9c8cce940.png" alt="">
-				</div>
-				<div class="parts-item__content">
-					<div class="parts-item__title">Керамогранит</div>
-					<div class="parts-item__desc">Мы советуем применять керамогранит в зонах с высокой нагрузкой и
-						большой проходимостью. Допустимо использовать только с плитами фальшпола из сульфата кальция.
-					</div>
-					<a href="/floors/?ELEMENT_ID=10" class="parts-item__link btn btn--link waves-effect">
-						Смотреть подробнее
-						<svg class="icon">
-							<use xlink:href="/local/templates/zelberg/img/sprite.svg#arrow"></use>
-						</svg>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<div class="rounded-section">
-		<section class="calculate">
-			<h2 class="calculate__title title">РАСЧЕТ СТОИМОСТИ</h2>
-			<div class="calculate-info">
-				<div class="calculate-info-item">
-					<svg class="icon">
-						<use xlink:href="img/sprite.svg#computer" />
-					</svg>
-					<div class="calculate-info-item__content">
-						Выводим <span>итоговую стоимость</span> на экране при заполнении
-						формы калькулятора
-
-					</div>
-				</div>
-				<div class="calculate-info-item">
-					<svg class="icon">
-						<use xlink:href="img/sprite.svg#direct" />
-					</svg>
-					<div class="calculate-info-item__content">
-						Высылаем подробное <span>Коммерческое предложение</span>
-						на электронную почту
-
-					</div>
-				</div>
-			</div>
-
-			<div class="calculate-form">
-				<div class="calculate-form__frame bg-loader">
-
-					<iframe border="0"
-						src="https://sys.zelbergpro.ru/web/forms/floor-form/form?fname=super_calc&amp;security=1&amp;"></iframe>
-				</div>
-				<!-- <div class="calculate-form__content">
-				<div class="calculate-form__fields">
-					<div class="calculate-field">
-						<div class="calculate-label">Площадь, м2</div>
-						<input type="text" class="calculate-input">
-					</div>
-					<div class="calculate-field">
-						<div class="calculate-label">Высота пола, мм</div>
-						<input type="text" class="calculate-input">
-					</div>
-					<div class="calculate-field calculate-field--full">
-						<div class="calculate-label">Тип системы</div>
-						<input type="text" class="calculate-input">
-					</div>
-					<div class="calculate-field calculate-field--full">
-						<div class="calculate-label">Панель</div>
-						<input type="text" class="calculate-input">
-					</div>
-					<div class="calculate-field">
-						<div class="calculate-label">*Ваше имя</div>
-						<input type="text" class="calculate-input">
-					</div>
-					<div class="calculate-field">
-						<div class="calculate-label">*Контактный телефон</div>
-						<input type="text" class="calculate-input">
-					</div>
-					<div class="calculate-field calculate-field--full">
-						<div class="calculate-label">*Электронная почта</div>
-						<input type="text" class="calculate-input" placeholder="+79999999999">
-					</div>
-				</div>
-				<button class="calculate-form__btn btn btn--accent">Рассчитать стоимость</button>
-				<label class="calculate-form-agree">
-					<input type="checkbox" name="" id="">
-
-					<div class="calculate-form-agree__content">
-						Нажимая кнопку Вы соглашаетесь с <button class="form-agree__link" data-fancybox-modal data-src="modal-agreement.html">условиями хранения персональных данных</span>
-
-					</div>
-
-				</label>
-			</div> -->
-				<div class="calculate-form__img">
-					<picture>
-						<!-- <source media="(min-width: )" srcset=""> -->
-						<img src="img/sempl/calculate-img.jpg" alt="">
-					</picture>
-				</div>
-			</div>
-		</section>
-	</div>
-
-	<section class="contact">
-		<h2 class="contact__title title">Наши контакты</h2>
-		<div class="contact-list">
-			<div class="contact-item">
-				<div class="contact-item__img">
-					<svg class="icon">
-						<use xlink:href="img/sprite.svg#contact-phone" />
-					</svg>
-				</div>
-				<div class="contact-item__content">
-					<div class="contact-item__title">Звоните</div>
-					<a href="tel:+74991305512" class="contact-item__link">8 (499) 130-55-12</a>
-				</div>
-			</div>
-			<div class="contact-item">
-				<div class="contact-item__img">
-					<svg class="icon">
-						<use xlink:href="img/sprite.svg#address-mark" />
-					</svg>
-				</div>
-				<div class="contact-item__content">
-					<div class="contact-item__title">Приходите</div>
-					<a target="_blank"
-						href="https://yandex.ru/maps/213/moscow/?from=tabbar&ll=37.694459%2C55.812575&mode=routes&rtext=~55.812575%2C37.694459&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fll%3D37.694%252C55.813%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0%252C%2520%25D0%259A%25D1%2580%25D0%25B0%25D1%2581%25D0%25BD%25D0%25BE%25D0%25B1%25D0%25BE%25D0%25B3%25D0%25B0%25D1%2582%25D1%258B%25D1%2580%25D1%2581%25D0%25BA%25D0%25B0%25D1%258F%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%25206%25D1%25812&source=serp_navig&z=17"
-						class="contact-item__link">
-						г. Москва, ул. Краснобогатырская
-						дом 6 строение 2
-					</a>
-				</div>
-			</div>
-			<div class="contact-item">
-				<div class="contact-item__img">
-					<svg class="icon">
-						<use xlink:href="img/sprite.svg#envelope" />
-					</svg>
-				</div>
-				<div class="contact-item__content">
-					<div class="contact-item__title">Пишите</div>
-					<a href="mailto:info@zelberg.ru" class="contact-item__link">info@zelberg.ru</a>
-				</div>
-			</div>
-		</div>
-		<div class="contact-bnr">
-			<div class="contact-bnr__content">
-				<div class="contact-bnr__title">Подписывайтесь на наш Инстаграм!</div>
-				<div class="contact-bnr__desc">Вы найдете там очень много полезного и интересного!</div>
-				<button class="contact-bnr__btn btn btn--white btn--shadow">Перейти</button>
-			</div>
-			<div class="contact-bnr__img">
-				<picture>
-					<!-- <source media="(min-width: )" srcset=""> -->
-					<img src="img/sempl/contact-bnr.png" alt="">
-				</picture>
-			</div>
-		</div>
-	</section>
-
-
-
-
-
-
-
-
-	<!-- Карта -->
-	<div class="rounded-section">
-		<div class="index-map bg-loader">
-			<div id="index-map" class="index-map__inner"></div>
-		</div>
-	</div>
-	<!-- /Карта -->
-
-
-
-	<footer class="footer">
-		<div class="footer__copy">Zelberg Group © 2021</div>
-		<div class="footer-soc">
-			<a target="_blank" class="footer-soc-item">
-				<svg class="icon">
-					<use xlink:href="img/sprite.svg#instagram" />
-				</svg>
-			</a>
-			<a target="_blank" class="footer-soc-item">
-				<svg class="icon">
-					<use xlink:href="img/sprite.svg#vk" />
-				</svg>
-			</a>
-			<a target="_blank" class="footer-soc-item">
-				<svg class="icon">
-					<use xlink:href="img/sprite.svg#facebook" />
-				</svg>
-			</a>
-		</div>
-		<a href="https://stdkit.ru" target="_blank" class="footer__designer">Разработано: Студия К.И.Т.</a>
-	</footer>
-
-
-
-
-
-
-
-
-	<!-- <script src="js/frontend--polifils.js"></script> -->
-	<!-- <script src="js/frontend--parallax.js"></script> -->
-
-
-	<!-- <script src="source/jquery-3.5.0.min.js"></script> -->
-	<!-- <script src="source/jquery.fancybox.min.js"></script> -->
-
-
-	<!-- <script src="source/swiper-bundle.min.js"></script> -->
-	<!-- <script src="source/maskedinput.js"></script> -->
-	<!-- <script src="source/wow.min.js"></script> -->
-	<!-- <script src="source/waves.js"></script> -->
-
-
-	<!-- <script src="js/frontend--logger.js"></script> -->
-	<!-- <script src="js/frontend--swipe.js"></script> -->
-	<!-- <script src="js/frontend--toggle.js"></script> -->
-	<!-- <script src="js/frontend--tab.js"></script> -->
-	<!-- <script src="js/frontend--template.js"></script> -->
-
-
-
-
-	<script>
-		window.addEventListener('load', () => {
-			const script = document.createElement('script');
-			script.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU';
-			document.body.appendChild(script);
-			script.onload = () => {
-				ymaps.ready(function () {
-					var myMap = new ymaps.Map('index-map', {
-						center: [55.812575, 37.694459],
-						zoom: 17,
-						controls: ['zoomControl']
-					});
-
-					MyIconContentLayout = ymaps.templateLayoutFactory.createClass();
-
-					myPlacemark = new ymaps.Placemark([55.812575, 37.694459], {
-						balloonContent: ''
-					}, {
-						iconLayout: 'default#image',
-						iconImageHref: 'img/icons/address-mark.svg',
-						iconImageSize: [60, 60],
-						iconImageOffset: [-30, -60]
-					});
-
-					myMap.geoObjects.add(myPlacemark);
-					myMap.behaviors.disable('scrollZoom');
-				});
-			}
-
-		})
-	</script>
-</body>
-
-</html>
+<% var data = {
+
+  title: 'Zelberg',
+  status: true
+
+} %>
+
+<%= _.template(require('./includes/header.html').default)({data}) %>
+
+<!-- Главный блок -->
+
+<main class="main container container--mx flex align-center bg-green relative overflow-hidden" data-theme="light">
+  <div class="bg-block pointer-none">
+    <img class="main__lines absolute w-100" src="img/pictures/lines.svg" alt="">
+  </div>
+  <div class="main__content flex align-center justify-between gap-10 gap-md-5 relative w-100">
+    <div class="main__info flex flex-column color-white w-100">
+      <h1 class="font-alt text-42 text-sm-34 color-cream bold-6 lh-2 mb-4 duration-5 anim anim--up -scroll-">Fit - Out под ключ <br class="d-md-none"> с гарантией качества</h1>
+      <p class="text-16 bold-4 lh-4 fade-80 mb-10 mb-md-5 duration-5 delay-1 anim anim--up -scroll-">
+        Выполнение общестроительных и отделочных работ, поставка материалов, производство и профессиональный монтаж систем фальшпола, офисных перегородок и подвесных потолков.
+      </p>
+      <p class="font-alt text-20 text-md-16 bold-5 lh-4 mb-6 mb-md-4 duration-5 delay-2 anim anim--up -scroll-">Интересны наши услуги? Свяжитесь с нами!</p>
+      <form class="main__form form flex-row align-end gap-2 gap-sm-5 duration-5 delay-3 anim anim--up -scroll- -form-submit-">
+        <input type="hidden" value="Главная" name="theme">
+        <label class="form-label w-sm-100 -validate-">
+          <span class="text-16 bold-5 mb-2">Ваш номер телефона</span>
+          <div class="form-wrapper">
+            <div class="input-cover">
+              <input class="input -input-tel- -validate-input-" type="tel" placeholder="+7" name="tel">
+            </div>
+            <span class="form-error anim anim--fade -validate-error-">Пожалуйста, введите ваш номер!</span>
+          </div>
+        </label>
+        <button class="btn btn--second btn--lg btn--fill w-sm-100 -waved-" type="submit">Отправить</button>
+      </form>
+    </div>
+    <div class="main__pic pic pic--rect w-100 duration-7 anim anim--down -scroll-">
+      <div class="loader">
+        <span class="loader-progress">
+          <svg class="loader-icon icon">
+            <use xlink:href="img/icons.svg#loader" />
+          </svg>
+        </span>
+      </div>
+      <picture>
+        <source srcset="img/pictures/main-img.webp" type="image/webp">
+        <img class="pic__img pic__img--sd" src="img/pictures/main-img.png" alt="" loading="lazy">
+      </picture>
+    </div>
+  </div>
+</main>
+
+<!-- Сервис -->
+
+<section class="service container pb-0" id="service">
+  <div class="card p-6 p-lg-10 p-sm-5">
+    <div class="service__content card-content flex-row align-center gap-10 gap-md-5">
+      <div class="service__pic pic pic--square bg-grey brs-6 w-100 anim anim--fade -scroll-">
+        <div class="loader">
+          <span class="loader-progress">
+            <svg class="loader-icon icon">
+              <use xlink:href="img/icons.svg#loader" />
+            </svg>
+          </span>
+        </div>
+        <picture>
+          <source srcset="img/pictures/service-img.webp" type="image/webp">
+          <img class="pic__img pic__img--rise" src="img/pictures/service-img.jpg" alt="" loading="lazy">
+        </picture>
+      </div>
+      <div class="flex flex-column pl-7 pl-lg-0">
+        <h2 class="font-alt text-38 text-sm-26 bold-6 lh-5 mb-5 anim anim--up -scroll-">Монтаж системы фальшпола</h2>
+        <p class="font-alt text-28 text-md-18 bold-5 mb-6 mb-md-4 anim anim--up -scroll-">500 ₽ / м<sup>2</sup></p>
+        <ul class="listing gap-3 text-16 lh-5 mb-10 mb-md-5">
+          <li class="anim anim--up -scroll-">Бизнес-центры и банки</li>
+          <li class="anim anim--up -scroll-">Офисные помещения Open Space</li>
+          <li class="anim anim--up -scroll-">Технические помещения</li>
+          <li class="anim anim--up -scroll-">Операторные и серверные комнаты</li>
+          <li class="anim anim--up -scroll-">Аудитории и лаборатории</li>
+          <li class="anim anim--up -scroll-">Торговый ритейл и рестораны</li>
+        </ul>
+        <button class="btn btn--primary btn--lg btn--fill w-max anim anim--up -scroll- -waved-" data-fancybox-dialog data-type="ajax" data-src="dialogs/dialog-feedback.php">Подробнее</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Сервис -->
+
+<section class="service container overflow-hidden">
+  <h2 class="font-alt text text--center text--uppercase text-38 text-sm-26 bold-6 lh-5 mb-2 anim anim--up -scroll-">ПРОЗРАЧНАЯ СИСТЕМА ЦЕН</h2>
+  <h3 class="text text--center text-16 text-sm-14 lh-1 mb-10 anim anim--up -scroll-">Узнайте, из чего складывается цена системы</h3>
+  <div class="service__card card overflow-visible p-6 p-lg-10 p-sm-5 mx-auto">
+    <div class="service__content card-content flex-row justify-between gap-10 gap-md-5 relative bg-grey brs-6 py-2 pl-2 pr-10 py-lg-5 pl-lg-5 pr-lg-5">
+      <div class="service__bg pic pic--segment d-md-none absolute pointer-none w-100 duration-7 anim anim--right -scroll-">
+        <div class="loader">
+          <span class="loader-progress">
+            <svg class="loader-icon icon">
+              <use xlink:href="img/icons.svg#loader" />
+            </svg>
+          </span>
+        </div>
+        <picture>
+          <source srcset="img/pictures/service-bg.webp" type="image/webp">
+          <img class="pic__img pic__img--sd" src="img/pictures/service-bg.png" alt="" loading="lazy">
+        </picture>
+      </div>
+      <div class="service__price flex flex-column bg-green relative brs-6 pt-5 pb-10 px-5 w-100 h-max duration-5 anim anim--down -scroll-" data-theme="light">
+        <svg class="icon text-28 color-cream mb-6 mb-md-4">
+          <use xlink:href="img/icons.svg#grid" />
+        </svg>
+        <p class="text-16 color-white lh-3 mb-6 mb-md-4">Цена системы фальшпола «под ключ» на 100 м2</p>
+        <p class="text-28 text-sm-22 bold-7 color-cream">250 000 ₽</p>
+      </div>
+      <div class="flex flex-column relative p-10 p-lg-0">
+        <h4 class="font-alt text-28 text-sm-18 bold-6 lh-2 mb-10 mb-md-5 anim anim--up -scroll-">Цена системы <br class="d-md-none"> складывается из:</h4>
+        <ul class="flex flex-column gap-5">
+          <li class="flex align-center bd-bottom pb-5 anim anim--up -scroll-">
+            <svg class="icon text-22 text-sm-18 color-second fade-80 mr-4 mr-sm-2">
+              <use xlink:href="img/icons.svg#layers" />
+            </svg>
+            <span class="text-16 text-sm-14 lh-2">Панель <b>от 100 ₽ / шт</b></span>
+          </li>
+          <li class="flex align-center bd-bottom pb-5 anim anim--up -scroll-">
+            <svg class="icon text-22 text-sm-18 color-second fade-80 mr-4 mr-sm-2">
+              <use xlink:href="img/icons.svg#rack" />
+            </svg>
+            <span class="text-16 text-sm-14 lh-2">Стойка <b>от 100 ₽ / шт</b></span>
+          </li>
+          <li class="flex align-center bd-bottom pb-5 anim anim--up -scroll-">
+            <svg class="icon text-22 text-sm-18 color-second fade-80 mr-4 mr-sm-2">
+              <use xlink:href="img/icons.svg#settings" />
+            </svg>
+            <span class="text-16 text-sm-14 lh-2">Комлектующие <b>от 100 ₽ / м<sup>2</sup></b></span>
+          </li>
+          <li class="flex align-center anim anim--up -scroll-">
+            <svg class="icon text-22 text-sm-18 color-second fade-80 mr-4 mr-sm-2">
+              <use xlink:href="img/icons.svg#square" />
+            </svg>
+            <span class="text-16 text-sm-14 lh-2">Работы <b>от 300 ₽ / м<sup>2</sup></b></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Подход -->
+
+<% var approach = [
+  {
+    delay: '',
+    icon: 'protractor',
+    number: '1',
+    list: ['Бесплатный выезд на объект', 'Замеры объекта', 'Обследование объекта']
+  },
+  {
+    delay: 'delay-2',
+    icon: 'doc',
+    number: '2',
+    list: ['Составление проекта', 'Раскладка панелей', 'Расчет необходимого комплекта материалов', 'Подписание договора']
+  },
+  {
+    delay: 'delay-4',
+    icon: 'square',
+    number: '3',
+    list: ['Выполнение подготовительных работ', 'Запуск материалов в производство']
+  },
+  {
+    delay: 'delay-6',
+    icon: 'tools',
+    number: '4',
+    list: ['Доставка материала в оговоренные сроки', 'Монтаж', 'Предоставление гарантии', 'Сервисное обслуживание']
+  }
+] %>
+
+<section class="approach container container--mx bg-primary glass-bg relative mb-5" id="approach" data-theme="light">
+  <div class="bg-block brs-6">
+    <div class="pic pic--rect fade-40 h-100">
+      <picture>
+        <source srcset="img/pictures/glass-bg.webp" type="image/webp">
+        <img class="pic__img" src="img/pictures/glass-bg.png" alt="" loading="lazy">
+      </picture>
+    </div>
+  </div>
+  <div class="relative">
+    <h2 class="font-alt color-white text text--center text--uppercase text-38 text-sm-26 bold-6 lh-5 mb-2 anim anim--up -scroll-">НАШ ПРОФЕССИОНАЛЬНЫЙ ПОДХОД</h2>
+    <h3 class="color-white text text--center text-16 text-sm-14 lh-1 mb-10 anim anim--up -scroll-">Узнайте, сколько стоит нужная вам услуга</h3>
+    <div class="grid gap-10 gap-sm-5">
+      <% for (var i = 0; i < approach.length; i++) { %>
+        <div class="col-3 col-lg-6 col-sm-12 card bg-white pt-8 pb-10 px-5 pt-sm-7 pb-sm-7 px-sm-5 ease-in <%= approach[i].delay %> anim anim--up -scroll- -waved-">
+          <div class="flex align-center font-alt text-28 text-sm-22 mb-6 mb-md-4">
+            <svg class="icon color-second mr-3">
+              <use xlink:href="img/icons.svg#<%= approach[i].icon %>" />
+            </svg>
+            <span class="color-black bold-6"><%= approach[i].number %> этап</span>
+          </div>
+          <ul class="listing gap-3">
+            <% for (var j = 0; j < approach[i].list.length; j++) { %>
+              <li class="color-second">
+                <span class="color-black text-14 lh-5"><%= approach[i].list[j] %></span>
+              </li>
+            <% } %>
+          </ul>
+        </div>
+      <% } %>
+    </div>
+  </div>
+</section>
+
+<!-- Материалы -->
+
+<% var materials = [
+  {
+    img: '1',
+    title: 'Панель из высокоплотного ДСП <span class="bold-7">Zelberg Wood</span>',
+    price: '1 400',
+    text: 'Основа несущей плиты представляет собой специальный спрессованный древесно стружечный материал высокой плотности (650 - 720 кг/м<sup>3</sup>) с добавлением гиброфобизаторов'
+  },
+  {
+    item: 'delay-2',
+    img: '2',
+    title: 'Панель из сульфата кальция  <span class="bold-7">Zelberg Wood</span>',
+    price: '1 400',
+    text: 'Панели выполнены из негорючего материала CaSO4 – сульфат кальция, усиленного целлюлозой. Панели выполняются и в одиночном (разъёмном) варианте, так и неразъёмной системой'
+  },
+  {
+    item: 'delay-4',
+    img: '3',
+    title: 'Панель из металла <span class="bold-7">Zelberg Wood</span>',
+    price: '2 000',
+    text: 'Два варианта: перфорированный и цельнометаллический. Перфорация позволяет вентилировать подпольное пространство и создавать потоки воздуха для вентиляции и кондиционирования помещений '
+  },
+  {
+    item: 'd-sm-none -listing-item-',
+    img: '4',
+    title: 'Панель из композитных решеток <span class="bold-7">Zelberg Wood</span>',
+    price: '3 000',
+    text: 'Обладают легкостью конструктивного материала, хорошей коррозийной и технической стойкостью, высокой деформационной стойкостью и механическими электроизоляционными характеристиками'
+  },
+  {
+    item: 'delay-2 d-sm-none -listing-item-',
+    img: '5',
+    title: 'Панель из керамогранита <span class="bold-7">Zelberg Wood</span>',
+    price: '3 000',
+    text: 'Панели 600*600 мм толщиной 20 мм. Высокая несущая способность, широкий выбор дизайна, неограниченная область применения'
+  },
+  {
+    item: 'delay-4 d-sm-none -listing-item-',
+    img: '6',
+    title: 'Стеклянная панель <span class="bold-7">Zelberg Wood</span>',
+    price: '15 000',
+    text: 'Одно из универсальных решений, которое поможет воплотить даже самые смелые идеи в реальность. Панели обладают рядом преимуществ: светопрозрачность, износостойкость и высокие точечные нагрузки'
+  }
+] %>
+
+<section class="materials container container--mx bg-white -listing-" id="materials">
+  <h2 class="font-alt text text--center text--uppercase text-38 text-sm-26 bold-6 lh-5 mb-2 anim anim--up -scroll-">МАТЕРИАЛЫ ДЛЯ ПАНЕЛЕЙ</h2>
+  <h3 class="text text--center text-16 text-sm-14 lh-1 mb-10 anim anim--up -scroll-">Посмотрите, что о нас говорят наши клиенты</h3>
+  <div class="grid gap-6">
+    <% for (var i = 0; i < materials.length; i++) { %>
+      <div class="col-4 col-lg-6 col-sm-12 card link-wrapper bg-white pointer p-2 ease-in-out anim anim--up -scroll- <% if (materials[i].item) { %> <%= materials[i].item %> <% } %> -waved-" data-theme="light" data-fancybox-dialog data-type="ajax" data-src="dialogs/dialog-feedback.php">
+        <div class="pic pic--rect bg-grey brs-6">
+          <div class="loader">
+            <span class="loader-progress">
+              <svg class="loader-icon icon">
+                <use xlink:href="img/icons.svg#loader" />
+              </svg>
+            </span>
+          </div>
+          <picture>
+            <source srcset="img/pictures/material-<%= materials[i].img %>.webp" type="image/webp">
+            <img class="pic__img" src="img/pictures/material-<%= materials[i].img %>.jpg" alt="" loading="lazy">
+          </picture>
+        </div>
+        <div class="card-content color-black px-4 pb-6">
+          <h4 class="link text-18 bold-5 lh-4 mb-2"><%= materials[i].title %></h4>
+          <p class="font-alt color-second text-28 text-md-22 bold-6 mb-4">от <%= materials[i].price %> ₽/м<sup>2</sup></p>
+          <p class="text-16 text-md-14 bold-4 lh-4 fade-80 mb-4"><%= materials[i].text %></p>
+          <button class="btn btn--primary btn--lg btn--contur mt-auto w-max">Подробнее</button>
+        </div>
+      </div>
+    <% } %>
+  </div>
+  <button class="btn btn--second btn--lg btn--contur d-none d-sm-flex mt-10 mx-auto -waved- -listing-btn-">Показать ещё</button>
+</section>
+
+<!-- Продукция -->
+
+<% var products = [
+  {
+    anim: 'right',
+    img: '1',
+    title: 'Стойки',
+    text: 'Изготовлены из гальванизированной стали с диаметрами трубок от М12 до М30. Регулируемый диапазон высот от 18 мм до 2-х метров.'
+  },
+  {
+    anim: 'left',
+    img: '2',
+    title: 'Стрингеры',
+    text: 'Имеют вид П- или замкнутого прямоугольного профиля. Придают системе дополнительную горизонтальную прочность. Их установка обязательна при высоте от 500мм.'
+  },
+  {
+    anim: 'right',
+    img: '3',
+    title: 'С-Профиль',
+    text: 'Усиливающий стингер для улучшения несущей способности фальшпола и придания ему горизонтальной стабильности.'
+  },
+  {
+    anim: 'left',
+    img: '4',
+    title: 'Аксессуары',
+    text: 'К вашему вниманию предлагается широкий выбор аксессуаров для обслуживания фальшпола, а также специальные съемники для доступа к коммуникациям.'
+  },
+  {
+    anim: 'left',
+    anim: 'right',
+    img: '5',
+    title: 'Ковровые покрытия',
+    text: 'Одно из лучших решений в оформлении пола. Выпускается размером 50*50 см. Высота ворса от 4 до 20 мм. Не боится влаги и высоких температур.'
+  },
+  {
+    anim: 'left',
+    img: '6',
+    title: 'ПВХ покрытия и натуральный линолеум',
+    text: 'Плитка ПВХ обладает антистатическим эффектом. Легко укладывается, не склонно к скольжению, устойчива к механическим повреждениям.'
+  },
+  {
+    anim: 'right',
+    img: '7',
+    title: 'Ламинат',
+    text: 'Весьма популярное напольное покрытие в виде ламината используется и для финишной отделки панелей фальшпола'
+  },
+  {
+    anim: 'left',
+    img: '8',
+    title: 'Керамогранит',
+    text: 'Среди современных материалов, которые используются для облицовки фальшполов, керамогранит выделяется рядом преимуществ'
+  }
+] %>
+
+<section class="products container overflow-hidden pb-0" id="accessories">
+  <h2 class="font-alt text text--center text--uppercase text-38 text-sm-26 bold-6 lh-5 mb-2 anim anim--up -scroll-">КОМПЛЕКТУЮЩИЕ</h2>
+  <h3 class="text text--center text-16 text-sm-14 lh-1 mb-10 anim anim--up -scroll-">Для каждого заказа мы готовы подобрать индивидуальный набор комплектующих</h3>
+  <div class="grid gap-9 gap-md-5">
+    <% for (var i = 0; i < 4; i++) { %>
+      <div class="col-6 col-lg-12 card ease-out duration-4 anim anim--<%= products[i].anim %> -scroll- py-4 px-4 py-md-8 px-md-5 -waved-">
+        <div class="products__content card-content flex-row align-center gap-8 gap-md-4">
+          <div class="products__pic pic pic--square bg-grey brs-2">
+            <div class="loader">
+              <span class="loader-progress">
+                <svg class="loader-icon icon">
+                  <use xlink:href="img/icons.svg#loader" />
+                </svg>
+              </span>
+            </div>
+            <picture>
+              <source srcset="img/pictures/product-<%= products[i].img %>.webp" type="image/webp">
+              <img class="pic__img" src="img/pictures/product-<%= products[i].img %>.jpg" alt="" loading="lazy">
+            </picture>
+          </div>
+          <div class="products__info flex flex-column pr-5 pr-md-0">
+            <h4 class="font-alt text-22 bold-6 lh-3 mb-2"><%= products[i].title %></h4>
+            <p class="text-14 bold-4 lh-4 fade-80"><%= products[i].text %></p>
+          </div>
+        </div>
+      </div>
+    <% } %>
+  </div>
+</section>
+
+<!-- Продукция -->
+
+<section class="products container overflow-hidden" id="coatings">
+  <h2 class="font-alt text text--center text--uppercase text-38 text-sm-26 bold-6 lh-5 mb-2 anim anim--up -scroll-">ФИНИШНЫЕ ПОКРЫТИЯ</h2>
+  <h3 class="text text--center text-16 text-sm-14 lh-1 mb-10 anim anim--up -scroll-">Вы можете ознакомиться с полным списком фальшпола с покрытием</h3>
+  <div class="grid gap-9 gap-md-5">
+    <% for (var i = 4; i < products.length; i++) { %>
+      <div class="col-6 col-lg-12 card ease-out duration-4 anim anim--<%= products[i].anim %> -scroll- py-4 px-4 py-md-8 px-md-5 -waved-">
+        <div class="products__content card-content flex-row align-center gap-8 gap-md-4">
+          <div class="products__pic pic pic--square bg-grey brs-2">
+            <div class="loader">
+              <span class="loader-progress">
+                <svg class="loader-icon icon">
+                  <use xlink:href="img/icons.svg#loader" />
+                </svg>
+              </span>
+            </div>
+            <picture>
+              <source srcset="img/pictures/product-<%= products[i].img %>.webp" type="image/webp">
+              <img class="pic__img" src="img/pictures/product-<%= products[i].img %>.jpg" alt="" loading="lazy">
+            </picture>
+          </div>
+          <div class="products__info flex flex-column pr-5 pr-md-0">
+            <h4 class="font-alt text-22 bold-6 lh-3 mb-2"><%= products[i].title %></h4>
+            <p class="text-14 bold-4 lh-4 fade-80"><%= products[i].text %></p>
+          </div>
+        </div>
+      </div>
+    <% } %>
+  </div>
+</section>
+
+<!-- Рассчет -->
+
+<section class="calculation container container--mx bg-primary glass-bg relative" data-theme="light">
+  <div class="bg-block brs-6">
+    <div class="pic pic--rect fade-40 h-100">
+      <picture>
+        <source srcset="img/pictures/glass-bg.webp" type="image/webp">
+        <img class="pic__img" src="img/pictures/glass-bg.png" alt="" loading="lazy">
+      </picture>
+    </div>
+  </div>
+  <div class="relative overflow-hidden">
+    <h2 class="font-alt color-white text text--center text--uppercase text-38 text-sm-26 bold-6 lh-5 mb-8 anim anim--up -scroll-">РАССЧИТАЙТЕ СТОИМОСТЬ РАБОТ</h2>
+    <div class="grid gap-6 gap-sm-3 mb-6">
+      <div class="calculation__item col-6 col-lg-12 flex align-center justify-between gap-5 color-white brs-3 py-4 px-6 anim anim--right -scroll-">
+        <p class="text-16 text-sm-14 bold-4 lh-2">
+          Выводим <span class="bold-6">итоговую стоимость</span> на экране <br class="d-md-none">
+          при заполнении формы калькулятора
+        </p>
+        <svg class="icon text-32 text-sm-26">
+          <use xlink:href="img/icons.svg#pc" />
+        </svg>
+      </div>
+      <div class="calculation__item col-6 col-lg-12 flex align-center justify-between gap-5 color-white brs-3 py-4 px-6 anim anim--left -scroll-">
+        <p class="text-16 text-sm-14 bold-4 lh-2">
+          Высылаем подробное <span class="bold-6">Коммерческое <br class="d-md-none">
+          предложение</span> на электронную почту
+        </p>
+        <svg class="icon text-32 text-sm-26">
+          <use xlink:href="img/icons.svg#direct" />
+        </svg>
+      </div>
+    </div>
+    <div class="card bg-white py-2 pl-2 pr-2 py-lg-5 pl-lg-5 pl-sm-4 pr-sm-0">
+      <div class="card-content flex-row justify-between anim anim--fade -scroll-">
+        <iframe class="calculation__iframe bd-none w-100 px-5 px-lg-0" src="https://sys.zelbergpro.ru/web/forms/floor-form/form?fname=super_calc&amp;security=1&amp;"></iframe>
+        <div class="calculation__pic pic pic--square d-lg-none w-100">
+          <div class="loader">
+            <span class="loader-progress">
+              <svg class="loader-icon icon">
+                <use xlink:href="img/icons.svg#loader" />
+              </svg>
+            </span>
+          </div>
+          <picture>
+            <source srcset="img/pictures/calculation-img.webp" type="image/webp">
+            <img class="pic__img pic__img--rise" src="img/pictures/calculation-img.jpg" alt="" loading="lazy">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= require('./includes/footer.html').default %>

@@ -1,6 +1,0 @@
-@each $key,
-$value in $colors {
-    .color-#{$key} {
-        color: var(--color-#{$key});
-    }
-}

@@ -1,0 +1,55 @@
+// Yandex-map
+.map {
+  height: 560px;
+
+  @media(max-width: $md) {
+    & {
+      height: 400px;
+    }
+  }
+}
+
+// Fancybox
+.fancybox {
+  &-load {
+    pointer-events: none;
+
+    & .fancybox__slide {
+      padding: 0;
+    }
+
+    & .fancybox__content {
+      display        : flex;
+      align-items    : center;
+      justify-content: center;
+      width          : 100vw;
+      height         : 100vh;
+      pointer-events : all;
+      overflow       : hidden;
+    }
+  }
+
+  &__content {
+    padding   : 0;
+    background: none;
+    max-width : 100%;
+
+    & :focus:not(.carousel__button.is-close) {
+      outline: none;
+    }
+
+    &>.carousel__button.is-close {
+      top             : 8px;
+      right           : 8px;
+      color           : var(--color-black);
+      background-color: var(--color-white);
+      box-shadow      : 0 4px 8px var(--color-black-10);
+    }
+  }
+
+  @media(max-width: $md) {
+    &__content>.carousel__button.is-close {
+      position: fixed;
+    }
+  }
+}

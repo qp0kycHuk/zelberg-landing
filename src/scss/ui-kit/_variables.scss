@@ -1,0 +1,52 @@
+// Цвета
+$colors: ("none": rgba(0, 0, 0, 0),
+  "primary": #335B58,
+  "second": #D17118,
+  "black": #323232,
+  "white": #ffffff,
+  "grey": #F3F3F3,
+  "dark": #303030,
+  "red": #be1b1b,
+  "green": #34706B,
+  "cream": #FFBF84);
+
+// Шрифты
+$font-family: ("alt": "Okta Neue",
+  "base": "Inter"
+);
+
+// Разрешения экрана
+$lg: 1200px;
+$md: 768px;
+$sm: 576px;
+
+// Переменные в CSS
+:root {
+
+  @each $key,
+  $value in $font-family {
+    --font-#{$key}: "#{$value}",
+    Arial,
+    Helvetica,
+    sans-serif;
+  }
+
+  @for $i from 5 through 25 {
+    --text-#{calc(2 * $i)}: #{calc(2 * $i / 16) + rem};
+  }
+
+  @each $key,
+  $value in $colors {
+    @include getColors($value, $key);
+  }
+
+  --spacing : 4px;
+
+  --block-lg: 1120px;
+  --block-md: 720px;
+  --block-sm: 530px;
+
+  --size-lg : 52px;
+  --size-md : 44px;
+  --size-sm : 36px;
+}

@@ -1,0 +1,26 @@
+// Модальное окно
+.dialog {
+  color           : var(--color-black);
+  background-color: var(--color-white);
+  max-width       : 100%;
+
+  &--load {
+    background-color: var(--color-none);
+
+    &+.carousel__button {
+      display: none;
+    }
+  }
+
+  &--lg {
+    width: var(--block-lg);
+  }
+
+  &--md {
+    width: var(--block-md);
+  }
+
+  &--sm {
+    width: var(--block-sm);
+  }
+}

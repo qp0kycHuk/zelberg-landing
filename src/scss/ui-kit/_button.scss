@@ -1,0 +1,101 @@
+// Кнопка
+.btn {
+  & * {
+    pointer-events: none
+  }
+
+  font: {
+    size  : var(--text-16);
+    weight: 600;
+  }
+
+  --btn-color    : var(--color-black);
+  --btn-accent   : var(--color-white);
+  color          : var(--btn-color);
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  position       : relative;
+  user-select    : none;
+  transition     : 0.2s ease;
+  cursor         : pointer;
+
+  @include getBtn("primary");
+  @include getBtn("second");
+
+  &--lg {
+    --size: var(--size-lg);
+    height: var(--size);
+  }
+
+  &--md {
+    --size: var(--size-md);
+    height: var(--size);
+  }
+
+  &--sm {
+    --size: var(--size-sm);
+    height: var(--size);
+  }
+
+  &--lg,
+  &--md,
+  &--sm {
+    border-radius : 8px;
+    padding-inline: calc(var(--size) / 2);
+  }
+
+  &--fill {
+    color           : var(--btn-accent);
+    background-color: var(--btn-color);
+  }
+
+  &--fade {
+    color           : var(--btn-color);
+    background-color: var(--btn-fade);
+  }
+
+  &--light {
+    color           : var(--btn-color);
+    background-color: var(--btn-accent);
+    border          : 2px solid var(--color-none);
+  }
+
+  &--contur {
+    border: 1px solid var(--btn-color);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 4px var(--btn-focus);
+  }
+
+  &:active {
+    box-shadow: inset 0 4px 4px var(--color-black-30);
+    transform : translateY(4px);
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity       : 0.5;
+  }
+
+  @media(hover) {
+    &:hover {
+      background-color: var(--btn-fade);
+    }
+
+    &--fill:hover {
+      background-color: var(--btn-dark);
+    }
+
+    &--fade:hover {
+      color           : var(--btn-accent);
+      background-color: var(--btn-light);
+    }
+
+    &--light:hover {
+      background-color: var(--btn-accent);
+      border-color    : var(--btn-color);
+    }
+  }
+}
