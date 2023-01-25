@@ -1,6 +1,16 @@
 import formValidate from './functions/form-validate'
 import dialog from './functions/dialog'
 
+declare global {
+
+  interface Window {
+
+    ym: any
+
+  }
+
+}
+
 const formSubmit = (event: Event): void => {
 
   event.preventDefault()
@@ -31,6 +41,8 @@ const formSubmit = (event: Event): void => {
     dialog.close()
 
     dialog.open('fancybox-dialog', '/dialogs/dialog-submit.php')
+
+    window.ym(92177375, 'reachGoal', 'zayavka')
 
     form.reset()
 
