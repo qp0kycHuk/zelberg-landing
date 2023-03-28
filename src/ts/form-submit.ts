@@ -21,7 +21,7 @@ const formSubmit = (event: Event): void => {
 
   const formData: FormData = new FormData(form)
   const queryString: string = new URLSearchParams(formData as URLSearchParams).toString()
-  const requestUrl: string = '/ajax/submit-handler.php'
+  const requestUrl: string = 'https://sys.zelbergpro.ru/web/forms/rest/floor-form/form?fname=super_calc'
   const submitBtn = form.querySelector('button[type="submit"]') as HTMLButtonElement
 
   submitBtn.setAttribute('disabled', 'disabled')
