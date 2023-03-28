@@ -13,6 +13,7 @@ import listing from './ts/listing'
 import formSubmit from './ts/form-submit'
 import inputs from './ts/inputs'
 import maskTel from './ts/mask-tel'
+import calc from './ts/calc'
 
 // Style
 import './scss/index.scss'
@@ -32,5 +33,6 @@ window.addEventListener('DOMContentLoaded', () => {
   formSubmit.init()
   inputs.init()
   maskTel.init()
+  calc.init()
 
 })
