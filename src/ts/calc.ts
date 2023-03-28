@@ -7,6 +7,8 @@ const createOptions = (source: string) => {
 
       const select = document.querySelector('.-select-panel-') as HTMLSelectElement
 
+      if (!select) return
+
       select.innerHTML = ''
 
       for (let key in data) {
