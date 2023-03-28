@@ -20,8 +20,7 @@ const formSubmit = (event: Event): void => {
   if (!formValidate.init(form)) return
 
   const formData: FormData = new FormData(form)
-  const queryString: string = new URLSearchParams(formData as URLSearchParams).toString()
-  const requestUrl: string = 'https://sys.zelbergpro.ru/web/forms/rest/floor-form/form?fname=super_calc'
+  const requestUrl: string = 'https://fitout.su/ajax/get_calculate_result.php'
   const submitBtn = form.querySelector('button[type="submit"]') as HTMLButtonElement
 
   submitBtn.setAttribute('disabled', 'disabled')
@@ -33,17 +32,17 @@ const formSubmit = (event: Event): void => {
     method: 'POST',
     body: formData
 
-  }).then((response: Response): void => {
+  }).then((response: Response) => {
 
-    response.text()
+    return response.text()
 
-  }).then((): void => {
+  }).then((response): void => {
 
     dialog.close()
 
     if (form.classList.contains('-form-calc-')) {
 
-      dialog.open('fancybox-dialog', `/dialogs/dialog-calc.php?${queryString}`)
+      dialog.open('fancybox-dialog', `/dialogs/dialog-calc.php?summ=${response}`)
 
     } else {
 

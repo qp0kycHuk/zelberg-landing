@@ -1,3 +1,9 @@
+const emailInput = (input: HTMLInputElement): boolean => {
+
+  return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value)
+
+}
+
 const init = (form: HTMLFormElement): boolean => {
 
   const validates = form.querySelectorAll('.-validate-') as NodeListOf<Element>
@@ -71,6 +77,12 @@ const init = (form: HTMLFormElement): boolean => {
           error.innerText = 'Пожалуйста, введите ваш номер!'
 
         }
+
+      }
+
+      if (input.classList.contains('-input-email-')) {
+
+        if (emailInput(input)) inputError()
 
       }
 
