@@ -1,7 +1,6 @@
 const init = (form: HTMLFormElement): boolean => {
 
   const validates = form.querySelectorAll('.-validate-') as NodeListOf<Element>
-  const download = form.querySelector('.-download-') as HTMLLabelElement
 
   let valid: boolean = true
 
@@ -72,6 +71,34 @@ const init = (form: HTMLFormElement): boolean => {
           error.innerText = 'Пожалуйста, введите ваш номер!'
 
         }
+
+      }
+
+      if (input.classList.contains('-input-height-')) {
+
+        const value: number = Number(input.value.replace(' ', ''))
+
+        if (value < 30 && value > 0) {
+
+          error.innerText = 'Высота не может быть меньше 30'
+          inputError()
+
+        } else if (value > 1000) {
+
+          error.innerText = 'Высота не может быть больше 1000'
+          inputError()
+
+        } else {
+
+          error.innerText = 'Пожалуйста, укажите высоту!'
+
+        }
+
+      }
+
+      if (input.classList.contains('-input-select-')) {
+
+        if (input.value == '0') inputError()
 
       }
 

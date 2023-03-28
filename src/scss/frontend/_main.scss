@@ -128,19 +128,9 @@
     background: linear-gradient(269.8deg, var(--color-white-20) 0.16%, var(--color-none) 59.13%), var(--color-green);
   }
 
-  &__iframe {
-    height: 475px;
-  }
-
   &__pic {
-    max-width    : 460px;
+    max-width    : 500px;
     border-radius: 0px 24px 24px 0px;
-  }
-
-  @media(max-width: $md) {
-    &__iframe {
-      height: 505px;
-    }
   }
 }
 

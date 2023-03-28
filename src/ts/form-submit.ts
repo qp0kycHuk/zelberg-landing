@@ -20,6 +20,7 @@ const formSubmit = (event: Event): void => {
   if (!formValidate.init(form)) return
 
   const formData: FormData = new FormData(form)
+  const queryString: string = new URLSearchParams(formData as URLSearchParams).toString()
   const requestUrl: string = '/ajax/submit-handler.php'
   const submitBtn = form.querySelector('button[type="submit"]') as HTMLButtonElement
 
@@ -40,7 +41,15 @@ const formSubmit = (event: Event): void => {
 
     dialog.close()
 
-    dialog.open('fancybox-dialog', '/dialogs/dialog-submit.php')
+    if (form.classList.contains('-form-calc-')) {
+
+      dialog.open('fancybox-dialog', `/dialogs/dialog-calc.php?${queryString}`)
+
+    } else {
+
+      dialog.open('fancybox-dialog', '/dialogs/dialog-submit.php')
+
+    }
 
     window.ym(92177375, 'reachGoal', 'zayavka')
 
