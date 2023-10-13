@@ -74,7 +74,7 @@ const init = (form: HTMLFormElement): boolean => {
 
         } else {
 
-          error.innerText = 'Пожалуйста, введите ваш номер!'
+          error.innerText = 'Введите ваш номер!'
 
         }
 
@@ -102,7 +102,7 @@ const init = (form: HTMLFormElement): boolean => {
 
         } else {
 
-          error.innerText = 'Пожалуйста, укажите высоту!'
+          error.innerText = 'Укажите высоту!'
 
         }
 
