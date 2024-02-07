@@ -34,7 +34,7 @@ const formSubmit = (event: Event): void => {
 
   }).then((response: Response) => {
 
-    return response.text()
+    return form.classList.contains('-form-calc-') ? response.text() : response.json()
 
   }).then((response): void => {
 
@@ -46,7 +46,17 @@ const formSubmit = (event: Event): void => {
 
     } else {
 
-      dialog.open('fancybox-dialog', '/dialogs/dialog-submit.php')
+      switch (response.status) {
+        case true: {
+          dialog.open('fancybox-dialog', '/dialogs/dialog-submit.php')
+          break
+        }
+
+        case false: {
+          dialog.open('fancybox-dialog', '/dialogs/dialog-error.php')
+          break
+        }
+      }
 
     }
 
